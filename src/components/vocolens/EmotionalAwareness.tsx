@@ -1,11 +1,9 @@
 import { AnimatedSection } from './AnimatedSection';
 import { Radar, ArrowUpRight, Clock, ChevronRight } from 'lucide-react';
+import { useNavigate } from '@tanstack/react-router';
 
-interface EmotionalAwarenessProps {
-  onNavigate?: (page: 'resources' | 'science-of-reflection') => void;
-}
-
-export function EmotionalAwareness({ onNavigate }: EmotionalAwarenessProps) {
+export function EmotionalAwareness() {
+  const navigate = useNavigate();
   return (
     <article
       itemScope
