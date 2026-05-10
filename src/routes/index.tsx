@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   return (
-      <section id="home" className="max-w-7xl mx-auto px-6 py-10 lg:py-16" style={{ paddingTop: '116.48px' }}>
+    <div className="min-h-screen bg-surface">      <section id="home" className="max-w-7xl mx-auto px-6 py-10 lg:py-16" style={{ paddingTop: '116.48px' }}>
         <div className="grid lg:grid-cols-2 gap-0 items-center">
           <AnimatedSection animation="fade-in-left" className="lg:pl-[11%]">
             <div className="hero-title-container mb-6">
