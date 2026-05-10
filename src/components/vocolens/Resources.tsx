@@ -64,7 +64,7 @@ export function Resources({ onNavigateArticle }: ResourcesProps) {
             <meta itemProp="name" content="Vocolens" />
           </span>
           <button
-            onClick={() => onNavigateArticle('science-of-reflection')}
+            onClick={() => navigate({ to: '/resources/science-of-reflection' })}
             aria-label="Read: How Naming Your Emotions with Voice Journaling Reduces Stress and Builds Emotional Resilience"
             className="w-full text-left bg-white rounded-3xl shadow-clay-lg border border-primary/10 p-8 lg:p-10 hover:shadow-clay-xl hover:-translate-y-1 transition-all duration-300 group"
           >
@@ -123,7 +123,7 @@ export function Resources({ onNavigateArticle }: ResourcesProps) {
             <meta itemProp="name" content="Vocolens" />
           </span>
           <button
-            onClick={() => onNavigateArticle('emotional-awareness-patterns')}
+            onClick={() => navigate({ to: '/resources/emotional-awareness-patterns' })}
             aria-label="Read: Building Emotional Awareness: How Pattern Recognition in Voice Journaling Transforms Self-Understanding"
             className="w-full text-left bg-white rounded-3xl shadow-clay-lg border border-primary/10 p-8 lg:p-10 hover:shadow-clay-xl hover:-translate-y-1 transition-all duration-300 group"
           >

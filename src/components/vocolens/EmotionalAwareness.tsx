@@ -60,7 +60,7 @@ export function EmotionalAwareness({ onNavigate }: EmotionalAwarenessProps) {
           <ol className="flex items-center gap-2 text-sm text-text-muted" itemScope itemType="https://schema.org/BreadcrumbList">
             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
               <button
-                onClick={() => onNavigate?.('resources')}
+                onClick={() => navigate({ to: '/resources' })}
                 className="hover:text-primary transition-colors"
                 itemProp="name"
               >
@@ -242,7 +242,7 @@ export function EmotionalAwareness({ onNavigate }: EmotionalAwarenessProps) {
           <div className="py-8 border-t border-primary/10">
             <h3 className="text-lg font-bold text-text-primary mb-6">Explore Related Articles</h3>
             <button
-              onClick={() => onNavigate?.('science-of-reflection')}
+              onClick={() => navigate({ to: '/resources/science-of-reflection' })}
               className="w-full text-left p-5 rounded-xl border border-primary/15 bg-primary/3 hover:bg-primary/5 hover:border-primary/25 transition-all group"
             >
               <div className="flex items-start justify-between gap-3">
@@ -278,7 +278,7 @@ export function EmotionalAwareness({ onNavigate }: EmotionalAwarenessProps) {
                 <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
               </a>
               <button
-                onClick={() => onNavigate?.('resources')}
+                onClick={() => navigate({ to: '/resources' })}
                 className="inline-flex items-center gap-2 border border-primary/20 text-primary px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-primary/5 transition-colors"
               >
                 Back to Resources
