@@ -83,12 +83,12 @@ export function PrivacySection() {
               <span className="text-white font-semibold">"Your personal reflections belong to you."</span>
               {' '}— Vocolens Privacy Policy
             </p>
-            <button
-              onClick={onReadPolicy}
+            <Link
+              to="/privacy"
               className="text-primary-muted text-sm font-medium whitespace-nowrap hover:text-white transition-colors duration-200 underline underline-offset-4"
             >
               Read full policy
-            </button>
+            </Link>
           </div>
         </AnimatedSection>
       </div>
