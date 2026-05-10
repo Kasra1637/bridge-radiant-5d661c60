@@ -35,7 +35,7 @@ const features = [
   },
 ];
 
-export function PrivacySection({ onReadPolicy }: PrivacySectionProps) {
+export function PrivacySection() {
   return (
     <section id="privacy" className="relative overflow-hidden py-24 lg:py-32">
       <div className="absolute inset-0 bg-gradient-to-br from-[#1a1230] via-[#1e1638] to-[#120d25]" />
