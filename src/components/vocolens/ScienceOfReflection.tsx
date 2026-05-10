@@ -1,9 +1,6 @@
 import { AnimatedSection } from './AnimatedSection';
 import { Brain, ArrowUpRight, Clock, ChevronRight, HelpCircle } from 'lucide-react';
-
-interface ScienceOfReflectionProps {
-  onNavigate?: (page: 'resources' | 'emotional-awareness-patterns') => void;
-}
+import { useNavigate } from '@tanstack/react-router';
 
 const faqData = [
   {
