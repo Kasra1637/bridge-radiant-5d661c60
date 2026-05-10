@@ -14,6 +14,7 @@ import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ResourcesScienceOfReflectionRouteImport } from './routes/resources.science-of-reflection'
+import { Route as ResourcesEmotionalAwarenessPatternsRouteImport } from './routes/resources.emotional-awareness-patterns'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -41,12 +42,19 @@ const ResourcesScienceOfReflectionRoute =
     path: '/science-of-reflection',
     getParentRoute: () => ResourcesRoute,
   } as any)
+const ResourcesEmotionalAwarenessPatternsRoute =
+  ResourcesEmotionalAwarenessPatternsRouteImport.update({
+    id: '/emotional-awareness-patterns',
+    path: '/emotional-awareness-patterns',
+    getParentRoute: () => ResourcesRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/privacy': typeof PrivacyRoute
   '/resources': typeof ResourcesRouteWithChildren
   '/terms': typeof TermsRoute
+  '/resources/emotional-awareness-patterns': typeof ResourcesEmotionalAwarenessPatternsRoute
   '/resources/science-of-reflection': typeof ResourcesScienceOfReflectionRoute
 }
 export interface FileRoutesByTo {
@@ -54,6 +62,7 @@ export interface FileRoutesByTo {
   '/privacy': typeof PrivacyRoute
   '/resources': typeof ResourcesRouteWithChildren
   '/terms': typeof TermsRoute
+  '/resources/emotional-awareness-patterns': typeof ResourcesEmotionalAwarenessPatternsRoute
   '/resources/science-of-reflection': typeof ResourcesScienceOfReflectionRoute
 }
 export interface FileRoutesById {
@@ -62,6 +71,7 @@ export interface FileRoutesById {
   '/privacy': typeof PrivacyRoute
   '/resources': typeof ResourcesRouteWithChildren
   '/terms': typeof TermsRoute
+  '/resources/emotional-awareness-patterns': typeof ResourcesEmotionalAwarenessPatternsRoute
   '/resources/science-of-reflection': typeof ResourcesScienceOfReflectionRoute
 }
 export interface FileRouteTypes {
@@ -71,6 +81,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/resources'
     | '/terms'
+    | '/resources/emotional-awareness-patterns'
     | '/resources/science-of-reflection'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -78,6 +89,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/resources'
     | '/terms'
+    | '/resources/emotional-awareness-patterns'
     | '/resources/science-of-reflection'
   id:
     | '__root__'
@@ -85,6 +97,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/resources'
     | '/terms'
+    | '/resources/emotional-awareness-patterns'
     | '/resources/science-of-reflection'
   fileRoutesById: FileRoutesById
 }
@@ -132,14 +145,24 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ResourcesScienceOfReflectionRouteImport
       parentRoute: typeof ResourcesRoute
     }
+    '/resources/emotional-awareness-patterns': {
+      id: '/resources/emotional-awareness-patterns'
+      path: '/emotional-awareness-patterns'
+      fullPath: '/resources/emotional-awareness-patterns'
+      preLoaderRoute: typeof ResourcesEmotionalAwarenessPatternsRouteImport
+      parentRoute: typeof ResourcesRoute
+    }
   }
 }
 
 interface ResourcesRouteChildren {
+  ResourcesEmotionalAwarenessPatternsRoute: typeof ResourcesEmotionalAwarenessPatternsRoute
   ResourcesScienceOfReflectionRoute: typeof ResourcesScienceOfReflectionRoute
 }
 
 const ResourcesRouteChildren: ResourcesRouteChildren = {
+  ResourcesEmotionalAwarenessPatternsRoute:
+    ResourcesEmotionalAwarenessPatternsRoute,
   ResourcesScienceOfReflectionRoute: ResourcesScienceOfReflectionRoute,
 }
 
