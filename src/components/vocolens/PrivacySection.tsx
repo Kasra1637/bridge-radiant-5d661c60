@@ -1,9 +1,6 @@
 import { Smartphone, Eye, Lock, Database, Trash2, Shield } from 'lucide-react';
 import { AnimatedSection, AnimatedGrid } from './AnimatedSection';
-
-interface PrivacySectionProps {
-  onReadPolicy: () => void;
-}
+import { Link } from '@tanstack/react-router';
 
 const features = [
   {
