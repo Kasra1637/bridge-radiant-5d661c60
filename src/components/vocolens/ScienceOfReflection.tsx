@@ -25,7 +25,8 @@ const faqData = [
   },
 ];
 
-export function ScienceOfReflection({ onNavigate }: ScienceOfReflectionProps) {
+export function ScienceOfReflection() {
+  const navigate = useNavigate();
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
