@@ -9,23 +9,27 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { Header } from "@/components/vocolens/Header";
 
 function NotFoundComponent() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
-        </p>
-        <div className="mt-6">
-          <Link
-            to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Go home
-          </Link>
+    <div className="min-h-screen bg-surface">
+      <Header />
+      <div className="flex min-h-screen items-center justify-center px-4">
+        <div className="max-w-md text-center">
+          <h1 className="text-7xl font-bold text-primary">404</h1>
+          <h2 className="mt-4 text-xl font-semibold text-text-primary">Page not found</h2>
+          <p className="mt-2 text-sm text-text-muted">
+            The page you're looking for doesn't exist or has been moved.
+          </p>
+          <div className="mt-6">
+            <Link
+              to="/"
+              className="inline-flex items-center justify-center rounded-full bg-gradient-primary px-5 py-2 text-sm font-semibold text-white shadow-md shadow-primary/20 hover:shadow-lg transition-all"
+            >
+              Go home
+            </Link>
+          </div>
         </div>
       </div>
     </div>
@@ -35,29 +39,25 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
+    <div className="flex min-h-screen items-center justify-center bg-surface px-4">
       <div className="max-w-md text-center">
-        <h1 className="text-xl font-semibold tracking-tight text-foreground">
+        <h1 className="text-xl font-semibold tracking-tight text-text-primary">
           This page didn't load
         </h1>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <p className="mt-2 text-sm text-text-muted">
           Something went wrong on our end. You can try refreshing or head back home.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
-            onClick={() => {
-              router.invalidate();
-              reset();
-            }}
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            onClick={() => { router.invalidate(); reset(); }}
+            className="inline-flex items-center justify-center rounded-full bg-gradient-primary px-5 py-2 text-sm font-semibold text-white"
           >
             Try again
           </button>
           <a
             href="/"
-            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
+            className="inline-flex items-center justify-center rounded-full border border-primary/20 bg-white px-5 py-2 text-sm font-medium text-text-primary hover:bg-primary/5"
           >
             Go home
           </a>
@@ -67,25 +67,60 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const softwareApplicationLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Vocolens",
+  url: "https://vocolens.com",
+  applicationCategory: "HealthApplication",
+  applicationSubCategory: "Mental Wellness",
+  operatingSystem: "Android",
+  downloadUrl: "https://play.google.com/store/apps/details?id=com.vocolens",
+  screenshot: ["https://vocolens.com/vocolens_app.png", "https://vocolens.com/vocolens_mobile.png"],
+  image: "https://vocolens.com/vocolens_-_preview.png",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+  aggregateRating: { "@type": "AggregateRating", ratingValue: "5", ratingCount: "3", bestRating: "5", worstRating: "1" },
+  description: "Vocolens is an AI voice journal for emotional clarity, stress relief, and self-reflection.",
+  featureList: [
+    "AI emotional analysis",
+    "Voice-to-text transcription in 30+ languages",
+    "Mood pattern tracking",
+    "Emotion labeling prompts",
+    "Sentiment timeline",
+    "Worry loop journaling",
+    "Emotional resilience building",
+  ],
+  author: { "@type": "Organization", name: "Vocolens", url: "https://vocolens.com" },
+  publisher: { "@type": "Organization", name: "Vocolens", url: "https://vocolens.com" },
+};
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "theme-color", content: "#7c5cbf" },
+      { name: "author", content: "Vocolens" },
+      { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },
+      { property: "og:site_name", content: "Vocolens" },
+      { property: "og:locale", content: "en_US" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/vocolens_favicon.png" },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: "/vocolens_favicon.png" },
+      { rel: "shortcut icon", href: "/vocolens_favicon.png" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/vocolens_favicon.png" },
+      { rel: "manifest", href: "/site.webmanifest" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700&display=swap",
       },
+    ],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(softwareApplicationLd) },
     ],
   }),
   shellComponent: RootShell,
@@ -110,10 +145,12 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <div className="min-h-screen bg-surface">
+        <Header />
+        <Outlet />
+      </div>
     </QueryClientProvider>
   );
 }
