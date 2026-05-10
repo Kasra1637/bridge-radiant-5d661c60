@@ -13,6 +13,7 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ResourcesScienceOfReflectionRouteImport } from './routes/resources.science-of-reflection'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -34,38 +35,63 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ResourcesScienceOfReflectionRoute =
+  ResourcesScienceOfReflectionRouteImport.update({
+    id: '/science-of-reflection',
+    path: '/science-of-reflection',
+    getParentRoute: () => ResourcesRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/privacy': typeof PrivacyRoute
-  '/resources': typeof ResourcesRoute
+  '/resources': typeof ResourcesRouteWithChildren
   '/terms': typeof TermsRoute
+  '/resources/science-of-reflection': typeof ResourcesScienceOfReflectionRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/privacy': typeof PrivacyRoute
-  '/resources': typeof ResourcesRoute
+  '/resources': typeof ResourcesRouteWithChildren
   '/terms': typeof TermsRoute
+  '/resources/science-of-reflection': typeof ResourcesScienceOfReflectionRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/privacy': typeof PrivacyRoute
-  '/resources': typeof ResourcesRoute
+  '/resources': typeof ResourcesRouteWithChildren
   '/terms': typeof TermsRoute
+  '/resources/science-of-reflection': typeof ResourcesScienceOfReflectionRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/privacy' | '/resources' | '/terms'
+  fullPaths:
+    | '/'
+    | '/privacy'
+    | '/resources'
+    | '/terms'
+    | '/resources/science-of-reflection'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/privacy' | '/resources' | '/terms'
-  id: '__root__' | '/' | '/privacy' | '/resources' | '/terms'
+  to:
+    | '/'
+    | '/privacy'
+    | '/resources'
+    | '/terms'
+    | '/resources/science-of-reflection'
+  id:
+    | '__root__'
+    | '/'
+    | '/privacy'
+    | '/resources'
+    | '/terms'
+    | '/resources/science-of-reflection'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   PrivacyRoute: typeof PrivacyRoute
-  ResourcesRoute: typeof ResourcesRoute
+  ResourcesRoute: typeof ResourcesRouteWithChildren
   TermsRoute: typeof TermsRoute
 }
 
@@ -99,13 +125,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/resources/science-of-reflection': {
+      id: '/resources/science-of-reflection'
+      path: '/science-of-reflection'
+      fullPath: '/resources/science-of-reflection'
+      preLoaderRoute: typeof ResourcesScienceOfReflectionRouteImport
+      parentRoute: typeof ResourcesRoute
+    }
   }
 }
+
+interface ResourcesRouteChildren {
+  ResourcesScienceOfReflectionRoute: typeof ResourcesScienceOfReflectionRoute
+}
+
+const ResourcesRouteChildren: ResourcesRouteChildren = {
+  ResourcesScienceOfReflectionRoute: ResourcesScienceOfReflectionRoute,
+}
+
+const ResourcesRouteWithChildren = ResourcesRoute._addFileChildren(
+  ResourcesRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   PrivacyRoute: PrivacyRoute,
-  ResourcesRoute: ResourcesRoute,
+  ResourcesRoute: ResourcesRouteWithChildren,
   TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport
