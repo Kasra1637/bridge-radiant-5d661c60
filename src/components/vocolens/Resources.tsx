@@ -1,10 +1,8 @@
 import { Brain, Clock, BookOpen, Radar } from 'lucide-react';
+import { useNavigate } from '@tanstack/react-router';
 
-interface ResourcesProps {
-  onNavigateArticle: (article: 'science-of-reflection' | 'emotional-awareness-patterns') => void;
-}
-
-export function Resources({ onNavigateArticle }: ResourcesProps) {
+export function Resources() {
+  const navigate = useNavigate();
   return (
     <main aria-label="Voice journaling and mental wellness resources" className="max-w-5xl mx-auto px-6 py-16 lg:py-24">
       <script
