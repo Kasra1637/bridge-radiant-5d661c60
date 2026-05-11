@@ -31,7 +31,7 @@ const proofCards = [
       </svg>
     ),
     title: 'Multiple ranked emotions',
-    desc: 'Instead of one label, Vocolens surfaces several co-existing emotions with intensity tiers inspired by Plutchik\u2019s wheel.',
+    desc: 'Instead of one label, Vocolens surfaces several co-existing emotions with intensity tiers inspired by Plutchik’s wheel.',
   },
   {
     icon: (
@@ -40,7 +40,7 @@ const proofCards = [
       </svg>
     ),
     title: 'Reflect and refine',
-    desc: 'Adjust what doesn\u2019t feel true. Your refinement is preserved beside the AI reading — both layers stay visible.',
+    desc: 'Adjust what doesn’t feel true. Your refinement is preserved beside the AI reading — both layers stay visible.',
   },
   {
     icon: (
@@ -69,7 +69,7 @@ export function EmotionDetection() {
           Understand your emotions without forcing a single label.
         </h2>
         <p className="text-text-secondary leading-relaxed text-lg mb-8">
-          Vocolens reads each journal entry for emotional patterns, intensity, and the layers in between — then invites you to reflect, refine, or gently correct what doesn\u2019t feel true. AI offers the starting point. You decide what feels honest.
+          Vocolens reads each journal entry for emotional patterns, intensity, and the layers in between — then invites you to reflect, refine, or gently correct what doesn’t feel true. AI offers the starting point. You decide what feels honest.
         </p>
 
         {/* Pull quote */}
@@ -81,7 +81,7 @@ export function EmotionDetection() {
           </div>
           <div>
             <p className="text-text-secondary text-sm leading-relaxed mb-2">
-              "It didn\u2019t try to flatten what I was feeling into one word. I saw the layers — the hope underneath the worry — and I could nudge the reading until it felt like mine."
+              "It didn’t try to flatten what I was feeling into one word. I saw the layers — the hope underneath the worry — and I could nudge the reading until it felt like mine."
             </p>
             <p className="text-xs font-semibold text-text-muted">Beta user · early reflection sessions</p>
           </div>
@@ -118,7 +118,7 @@ export function EmotionDetection() {
                 <p className="text-[11px] font-semibold uppercase tracking-widest text-primary/70">Voice transcription</p>
               </div>
               <p className="text-sm text-text-secondary leading-relaxed italic">
-                "I keep circling back to the same thought. There\u2019s this quiet hope underneath everything, but I can\u2019t tell if I\u2019m bracing or actually breathing again."
+                "I keep circling back to the same thought. There’s this quiet hope underneath everything, but I can’t tell if I’m bracing or actually breathing again."
               </p>
               <div className="mt-auto pt-4 flex items-center gap-2 text-[11px] text-text-muted">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
