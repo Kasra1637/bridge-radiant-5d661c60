@@ -66,10 +66,10 @@ export function EmotionDetection() {
           Hybrid Emotion Intelligence
         </span>
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight mb-5">
-          Understand your emotions without forcing a single label.
+          Feelings aren’t one word. Neither is our AI.
         </h2>
         <p className="text-text-secondary leading-relaxed text-lg mb-8">
-          Vocolens reads each journal entry for emotional patterns, intensity, and the layers in between — then invites you to reflect, refine, or gently correct what doesn’t feel true. AI offers the starting point. You decide what feels honest.
+          Vocolens detects the layered emotions in every entry — then hands the pen back to you. Refine the reading, keep what rings true, and watch your real emotional patterns take shape.
         </p>
 
         {/* Pull quote */}
