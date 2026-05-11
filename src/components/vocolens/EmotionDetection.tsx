@@ -90,65 +90,72 @@ export function EmotionDetection() {
 
       {/* Hybrid workflow visualization */}
       <AnimatedSection animation="fade-in-up" delay={0.1} className="mb-10">
-        <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-clay border border-primary/8">
+        <div className="bg-white rounded-3xl p-5 sm:p-7 lg:p-8 shadow-clay border border-primary/8">
 
-          {/* Card header row */}
-          <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
+          {/* Card header */}
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-primary/70 mb-1">Hybrid emotional reading</p>
-              <h3 className="text-xl font-bold text-text-primary">Layered, ranked, and yours to refine</h3>
+              <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-primary/70 mb-1.5">
+                A living emotional model
+              </p>
+              <h3 className="text-lg sm:text-xl font-bold text-text-primary leading-snug">
+                Read. Refine. Remembered for you.
+              </h3>
             </div>
-            <div className="flex items-center gap-4 text-xs text-text-muted">
+            <div className="flex items-center gap-3 text-[11px] text-text-muted">
               <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-primary/70 inline-block" /> AI baseline
+                <span className="w-2 h-2 rounded-full bg-primary/70 inline-block" /> AI
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block" /> Your reflection
+                <span className="w-2 h-2 rounded-full bg-amber-400 inline-block" /> You
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" /> Hybrid
               </span>
             </div>
           </div>
 
-          {/* Three-column hybrid flow */}
-          <div className="grid lg:grid-cols-12 gap-5">
+          {/* Vertical-on-mobile, 3-column-on-desktop hybrid flow */}
+          <div className="grid gap-4 lg:gap-5 lg:grid-cols-12">
 
             {/* 1. Transcription source */}
             <div className="lg:col-span-4 rounded-2xl p-5 bg-gradient-to-br from-primary/5 via-white to-white border border-primary/10 flex flex-col">
               <div className="flex items-center gap-2 mb-3">
                 <span className="w-6 h-6 rounded-full bg-primary/10 text-primary text-[10px] font-bold flex items-center justify-center">1</span>
-                <p className="text-[11px] font-semibold uppercase tracking-widest text-primary/70">Voice transcription</p>
+                <p className="text-[11px] font-semibold uppercase tracking-widest text-primary/70">Voice entry</p>
               </div>
               <p className="text-sm text-text-secondary leading-relaxed italic">
                 "I keep circling back to the same thought. There’s this quiet hope underneath everything, but I can’t tell if I’m bracing or actually breathing again."
               </p>
               <div className="mt-auto pt-4 flex items-center gap-2 text-[11px] text-text-muted">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                Analyzing emotional layers…
+                Listening for emotional layers…
               </div>
             </div>
 
-            {/* 2. AI baseline — multiple ranked emotions with intensity */}
+            {/* 2. AI baseline */}
             <div className="lg:col-span-5 rounded-2xl p-5 bg-white border border-primary/15 shadow-clay-sm">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-2">
-                  <span className="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center">2</span>
-                  <p className="text-[11px] font-semibold uppercase tracking-widest text-primary/70">AI emotional baseline</p>
+              <div className="flex items-center justify-between gap-2 mb-4">
+                <div className="flex items-center gap-2 min-w-0">
+                  <span className="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0">2</span>
+                  <p className="text-[11px] font-semibold uppercase tracking-widest text-primary/70 truncate">AI emotional baseline</p>
                 </div>
-                <span className="text-[10px] font-semibold text-text-muted bg-gray-50 border border-gray-100 px-2 py-0.5 rounded-full">
-                  Plutchik-inspired tiers
+                <span className="hidden sm:inline-block text-[10px] font-semibold text-text-muted bg-gray-50 border border-gray-100 px-2 py-0.5 rounded-full whitespace-nowrap">
+                  Plutchik-inspired
                 </span>
               </div>
 
               <div className="space-y-3">
                 {aiEmotions.map((e, i) => (
                   <div key={e.label} className="flex items-center gap-3">
-                    <span className="text-[10px] w-5 font-bold text-text-muted">#{i + 1}</span>
-                    <div className="flex-1">
-                      <div className="flex items-baseline justify-between mb-1">
-                        <span className="text-sm font-semibold text-text-primary">
+                    <span className="text-[10px] w-4 font-bold text-text-muted">#{i + 1}</span>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-baseline justify-between gap-2 mb-1">
+                        <span className="text-sm font-semibold text-text-primary truncate">
                           {e.label}
                           <span className="ml-1.5 text-[10px] font-medium text-text-muted">· {e.family}</span>
                         </span>
-                        <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: e.color }}>
+                        <span className="text-[10px] font-semibold uppercase tracking-wider whitespace-nowrap" style={{ color: e.color }}>
                           {e.tier}
                         </span>
                       </div>
@@ -167,10 +174,10 @@ export function EmotionDetection() {
               </div>
 
               <div className="mt-4 pt-4 border-t border-gray-100 flex items-center gap-2 text-[11px] text-text-muted">
-                <svg className="w-3.5 h-3.5 text-primary/70" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="w-3.5 h-3.5 text-primary/70 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4" />
                 </svg>
-                Blended emotions · ambivalence preserved
+                Ambivalence preserved, not flattened
               </div>
             </div>
 
@@ -193,31 +200,30 @@ export function EmotionDetection() {
               </p>
 
               <div className="mt-auto pt-4 text-[11px] text-text-muted leading-relaxed">
-                Both layers preserved — AI reading and your reflection live side by side.
+                Your edits are remembered — shaping a model only you could have.
               </div>
             </div>
           </div>
 
-          {/* Footer strip */}
-          <div className="flex flex-wrap items-center justify-between gap-3 mt-6 pt-5 border-t border-gray-100">
-            <p className="text-xs text-text-muted flex items-center gap-1.5">
-              <span className="text-amber-400 text-sm leading-none">★</span>
-              <span>Your refinement is never overridden — it teaches the model gently over time.</span>
-            </p>
-            <div className="flex gap-2">
-              <div className="flex items-center gap-1.5 bg-primary/5 text-primary text-xs font-semibold px-3 py-1.5 rounded-full border border-primary/10">
+          {/* Footer — elegant equation */}
+          <div className="mt-6 pt-5 border-t border-gray-100 space-y-4">
+            <div className="flex items-center justify-center flex-wrap gap-2 text-xs font-semibold">
+              <span className="px-3 py-1.5 rounded-full bg-primary/5 text-primary border border-primary/10">
                 AI baseline
-              </div>
-              <span className="text-text-muted text-xs">+</span>
-              <div className="flex items-center gap-1.5 bg-amber-50 text-amber-700 text-xs font-semibold px-3 py-1.5 rounded-full border border-amber-100">
+              </span>
+              <span className="text-text-muted">+</span>
+              <span className="px-3 py-1.5 rounded-full bg-amber-50 text-amber-700 border border-amber-100">
                 Your reflection
-              </div>
-              <span className="text-text-muted text-xs">=</span>
-              <div className="flex items-center gap-1.5 bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1.5 rounded-full border border-emerald-100">
+              </span>
+              <span className="text-text-muted">=</span>
+              <span className="px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
-                Hybrid interpretation
-              </div>
+                A model that grows with you
+              </span>
             </div>
+            <p className="text-[11px] sm:text-xs text-text-muted text-center max-w-md mx-auto leading-relaxed">
+              <span className="text-amber-400">★</span> Your refinements are never overridden — they quietly train an emotional lens that becomes uniquely yours.
+            </p>
           </div>
         </div>
       </AnimatedSection>
