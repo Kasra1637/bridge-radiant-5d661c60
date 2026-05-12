@@ -61,7 +61,7 @@ function Home() {
             A personal mission
           </h2>
           <p className="text-text-secondary text-lg text-center max-w-2xl mx-auto mb-16">
-            Turning racing thoughts into effortless expression.
+            Turning racing thoughts into clear, effortless expression.
           </p>
         </AnimatedSection>
         <AnimatedGrid
