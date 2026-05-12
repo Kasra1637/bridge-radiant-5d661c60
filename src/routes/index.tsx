@@ -38,7 +38,7 @@ function Home() {
               </h1>
             </div>
             <p className="text-text-secondary text-lg mb-8 max-w-md">
-              Speak your mind. Find your clarity. An audio journal app that actually listens.
+              Speak your mind. Find your clarity. An audio journal that listens.
             </p>
           </AnimatedSection>
 
@@ -61,7 +61,7 @@ function Home() {
             A personal mission
           </h2>
           <p className="text-text-secondary text-lg text-center max-w-2xl mx-auto mb-16">
-            Turning racing thoughts into effortless expression.
+            Turning racing thoughts into clear, effortless expression.
           </p>
         </AnimatedSection>
         <AnimatedGrid
@@ -113,7 +113,7 @@ function Home() {
             How our AI voice journal works
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            Three simple steps transform your audio journal app experience from raw thoughts to clear insights.
+            Three steps from raw thoughts to clear audio journal insights.
           </p>
         </AnimatedSection>
         <AnimatedGrid
@@ -165,7 +165,7 @@ function Home() {
             Journal in your native tongue
           </h2>
           <p className="text-center text-text-secondary text-lg mb-8 max-w-2xl mx-auto">
-            With the world's most accurate real-time transcription. 30+ languages. Zero friction.
+            World-class real-time transcription. 30+ languages. Zero friction.
           </p>
         </AnimatedSection>
         <div
@@ -209,7 +209,7 @@ function Home() {
             Emotional Intelligence Analysis
           </h2>
           <p className="text-text-secondary text-lg max-w-3xl mx-auto mb-8">
-            See patterns you've missed. Understand yourself deeply.
+            See the patterns you've missed. Understand yourself deeply.
           </p>
         </AnimatedSection>
 
