@@ -209,7 +209,7 @@ function Home() {
             Emotional Intelligence Analysis
           </h2>
           <p className="text-text-secondary text-lg max-w-3xl mx-auto mb-8">
-            See patterns you've missed. Understand yourself deeply.
+            See the patterns you've missed. Understand yourself deeply.
           </p>
         </AnimatedSection>
 
