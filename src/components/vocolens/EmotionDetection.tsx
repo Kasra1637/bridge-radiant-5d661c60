@@ -69,7 +69,7 @@ export function EmotionDetection() {
           Feelings aren’t one word. Neither is our AI.
         </h2>
         <p className="text-text-secondary leading-relaxed text-lg mb-8">
-          Vocolens reads every layer of feeling — then hands the pen back, so the reading sounds like you.
+          Vocolens reads every layer of feeling — you refine what's true.
         </p>
 
         {/* Pull quote */}
