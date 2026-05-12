@@ -165,7 +165,7 @@ function Home() {
             Journal in your native tongue
           </h2>
           <p className="text-center text-text-secondary text-lg mb-8 max-w-2xl mx-auto">
-            With the world's most accurate real-time transcription. 30+ languages. Zero friction.
+            World-class real-time transcription. 30+ languages. Zero friction.
           </p>
         </AnimatedSection>
         <div
