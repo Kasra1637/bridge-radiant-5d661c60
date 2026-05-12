@@ -38,7 +38,7 @@ function Home() {
               </h1>
             </div>
             <p className="text-text-secondary text-lg mb-8 max-w-md">
-              Speak your mind. Find your clarity. An audio journal app that actually listens.
+              Speak your mind. Find your clarity. An audio journal that listens.
             </p>
           </AnimatedSection>
 
