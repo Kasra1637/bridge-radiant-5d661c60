@@ -164,7 +164,7 @@ function Home() {
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-primary mb-4">
             Journal in your native tongue
           </h2>
-          <p className="text-center text-text-secondary text-base mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-text-secondary text-lg mb-8 max-w-2xl mx-auto">
             With the world's most accurate real-time transcription. 30+ languages. Zero friction.
           </p>
         </AnimatedSection>
