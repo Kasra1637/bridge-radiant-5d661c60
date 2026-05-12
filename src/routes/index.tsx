@@ -113,7 +113,7 @@ function Home() {
             How our AI voice journal works
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            Three simple steps transform your audio journal app experience from raw thoughts to clear insights.
+            Three steps from raw thoughts to clear audio journal insights.
           </p>
         </AnimatedSection>
         <AnimatedGrid
