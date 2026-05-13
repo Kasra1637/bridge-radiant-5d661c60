@@ -52,7 +52,7 @@ export function PrivacySection() {
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight">
               Your journal. Your privacy.
             </h2>
-            <p className="text-white/60 text-lg max-w-xl mx-auto leading-relaxed">
+            <p className="text-white/60 max-w-xl mx-auto text-base leading-relaxed">
               Your thoughts stay on your device. Always private, always yours.
             </p>
           </div>
@@ -72,14 +72,14 @@ export function PrivacySection() {
                 <Icon className="w-5 h-5 text-primary-muted" />
               </div>
               <h3 className="text-white font-semibold text-base mb-2">{title}</h3>
-              <p className="text-white/55 text-sm leading-relaxed">{description}</p>
+              <p className="text-white/55 text-base leading-relaxed">{description}</p>
             </div>
           ))}
         </AnimatedGrid>
 
         <AnimatedSection animation="fade-in-up" delay={0.3}>
           <div className="border border-white/10 rounded-2xl px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/[0.04]">
-            <p className="text-white/70 text-base text-center sm:text-left">
+            <p className="text-white/70 text-center sm:text-left text-base leading-relaxed">
               <span className="text-white font-semibold">"Your personal reflections belong to you."</span>
               {' '}— Vocolens Privacy Policy
             </p>

@@ -127,7 +127,7 @@ export function Header() {
                         <div className="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover/item:bg-primary/20 transition-colors">
                           <Icon className="w-4 h-4 text-primary" />
                         </div>
-                        <p className="text-sm font-semibold text-gray-700 group-hover/item:text-primary transition-colors">{label}</p>
+                        <p className="font-semibold text-gray-700 group-hover/item:text-primary transition-colors text-base leading-relaxed">{label}</p>
                       </Link>
                     ))}
                   </div>

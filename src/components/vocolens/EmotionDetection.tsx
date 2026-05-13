@@ -59,7 +59,7 @@ export function EmotionDetection() {
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight mb-5">
           Feelings aren’t one word. Neither is our AI.
         </h2>
-        <p className="text-text-secondary leading-relaxed text-lg mb-8">
+        <p className="text-text-secondary mb-8 text-base leading-relaxed">
           Vocolens reads every layer of feeling — you refine what's true.
         </p>
 
@@ -72,7 +72,7 @@ export function EmotionDetection() {
           {/* Card header row */}
           <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-primary/70 mb-1">Hybrid emotional reading</p>
+              <p className="font-semibold uppercase tracking-widest text-primary/70 mb-1 text-base leading-relaxed">Hybrid emotional reading</p>
               <h3 className="text-xl font-bold text-text-primary">Layered, ranked, and yours to refine</h3>
             </div>
             <div className="flex items-center gap-4 text-xs text-text-muted">
@@ -92,9 +92,9 @@ export function EmotionDetection() {
             <div className="lg:col-span-4 rounded-2xl p-5 bg-gradient-to-br from-primary/5 via-white to-white border border-primary/10 flex flex-col">
               <div className="flex items-center gap-2 mb-3">
                 <span className="w-6 h-6 rounded-full bg-primary/10 text-primary text-[10px] font-bold flex items-center justify-center">1</span>
-                <p className="text-[11px] font-semibold uppercase tracking-widest text-primary/70">Voice transcription</p>
+                <p className="text-[11px] font-semibold uppercase tracking-widest text-primary/70 text-base leading-relaxed">Voice transcription</p>
               </div>
-              <p className="text-sm text-text-secondary leading-relaxed italic">
+              <p className="text-text-secondary italic text-base leading-relaxed">
                 "I keep circling back to the same thought. There’s this quiet hope underneath everything, but I can’t tell if I’m bracing or actually breathing again."
               </p>
               <div className="mt-auto pt-4 flex items-center gap-2 text-[11px] text-text-muted">
@@ -108,7 +108,7 @@ export function EmotionDetection() {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
                   <span className="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center">2</span>
-                  <p className="text-[11px] font-semibold uppercase tracking-widest text-primary/70">AI emotional baseline</p>
+                  <p className="text-[11px] font-semibold uppercase tracking-widest text-primary/70 text-base leading-relaxed">AI emotional baseline</p>
                 </div>
                 <span className="text-[10px] font-semibold text-text-muted bg-gray-50 border border-gray-100 px-2 py-0.5 rounded-full">
                   Plutchik-inspired tiers
@@ -155,17 +155,17 @@ export function EmotionDetection() {
             <div className="lg:col-span-3 rounded-2xl p-5 bg-gradient-to-br from-amber-50/60 via-white to-white border border-amber-200/40 flex flex-col">
               <div className="flex items-center gap-2 mb-3">
                 <span className="w-6 h-6 rounded-full bg-amber-400/20 text-amber-600 text-[10px] font-bold flex items-center justify-center">3</span>
-                <p className="text-[11px] font-semibold uppercase tracking-widest text-amber-600/90">Your reflection</p>
+                <p className="text-[11px] font-semibold uppercase tracking-widest text-amber-600/90 text-base leading-relaxed">Your reflection</p>
               </div>
 
               <div className="rounded-xl bg-white border border-amber-200/50 p-3 mb-3 shadow-sm">
-                <p className="text-[10px] font-semibold uppercase tracking-wider text-amber-600 mb-1">Refined to</p>
-                <p className="text-sm font-semibold text-text-primary leading-snug">
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-amber-600 mb-1 text-base leading-relaxed">Refined to</p>
+                <p className="font-semibold text-text-primary text-base leading-relaxed">
                   <span className="text-amber-500">★</span> {userRefinement.label}
                 </p>
               </div>
 
-              <p className="text-xs text-text-secondary leading-relaxed italic">
+              <p className="text-text-secondary italic text-base leading-relaxed">
                 "{userRefinement.note}"
               </p>
 
@@ -190,7 +190,7 @@ export function EmotionDetection() {
                 {card.icon}
               </div>
               <h4 className="text-sm font-bold text-text-primary mb-1.5">{card.title}</h4>
-              <p className="text-xs text-text-muted leading-relaxed">{card.desc}</p>
+              <p className="text-text-muted text-base leading-relaxed">{card.desc}</p>
             </div>
           ))}
         </div>

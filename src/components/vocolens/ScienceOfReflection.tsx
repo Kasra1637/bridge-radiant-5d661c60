@@ -154,7 +154,7 @@ export function ScienceOfReflection() {
           >
             How Naming Your Emotions with Voice Journaling Reduces Stress and Builds Emotional Resilience
           </h1>
-          <p data-speakable="summary" className="text-text-secondary text-base lg:text-lg leading-relaxed mb-5">
+          <p data-speakable="summary" className="text-text-secondary mb-5 text-base leading-relaxed">
             Neuroscience research proves that putting emotions into specific words — a process called <strong className="text-text-primary font-semibold">affect labeling</strong> — reduces amygdala activity and calms your nervous system. Learn how daily voice journaling applies this science to help you break free from worry loops and build lasting resilience.
           </p>
           <div className="flex flex-wrap items-center gap-4 mb-5 text-sm text-text-muted">
@@ -163,7 +163,7 @@ export function ScienceOfReflection() {
           <div className="h-1 w-16 bg-gradient-primary rounded-full mb-6" />
 
           <div data-speakable="key-takeaways" className="bg-primary/5 border border-primary/15 rounded-2xl p-5">
-            <p className="text-sm font-semibold text-primary mb-2 uppercase tracking-wide">Key takeaways</p>
+            <p className="font-semibold text-primary mb-2 uppercase tracking-wide text-base leading-relaxed">Key takeaways</p>
             <ul className="space-y-2 text-sm text-text-secondary leading-relaxed">
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" aria-hidden="true" />
@@ -195,14 +195,14 @@ export function ScienceOfReflection() {
             <h2 id="section-neuroscience" className="text-xl lg:text-2xl font-bold text-text-primary mb-4">
               The Neuroscience of Emotion Labeling: How Affect Labeling Reduces Stress
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-base leading-relaxed">
               Scientific studies by <strong className="text-text-primary font-semibold">Lieberman et al. (2007)</strong> and a 2011 follow-up demonstrated that simply putting feelings into words — a process called <strong className="text-text-primary font-semibold">affect labeling</strong> — reduces activity in the amygdala, the brain's alarm center. Less amygdala activation means a calmer nervous system and a more measured emotional response.
             </p>
             <blockquote className="border-l-4 border-primary/40 pl-5 my-5 italic text-text-secondary bg-primary/4 rounded-r-xl py-4 pr-4">
               "Putting feelings into words produces a lasting dampening of emotional response — not just suppression, but genuine regulation."
               <cite className="block mt-2 text-xs not-italic text-text-muted font-medium">— Lieberman et al., 2007, <span className="italic">Psychological Science</span></cite>
             </blockquote>
-            <p className="mb-4">
+            <p className="mb-4 text-base leading-relaxed">
               This isn't about toxic positivity or ignoring hard emotions. It's about giving your brain the language it needs to process what you're experiencing — and in doing so, creating real neurological relief. The prefrontal cortex — responsible for rational thinking and self-regulation — becomes more active when you name emotions, effectively bridging the gap between reactive feeling and deliberate understanding.
             </p>
             <p>
@@ -226,10 +226,10 @@ export function ScienceOfReflection() {
             <h2 id="section-vocolens-approach" className="text-xl lg:text-2xl font-bold text-text-primary mb-4">
               How Voice Journaling Applies Affect Labeling Science to Daily Life
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-base leading-relaxed">
               With Vocolens, you don't just record — you harness this neurological power every time you speak. The app prompts you to go beyond surface-level descriptions and precisely name what you're feeling: not just "stressed," but "overwhelmed by uncertainty," or "anxious about being judged."
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-base leading-relaxed">
               By precisely naming your feelings, distancing yourself from them through voice, and grounding in the physical sensations behind each emotion, you create mental space between stimulus and response. Over time, this daily voice journaling practice reduces baseline stress levels and fosters genuine resilience — the ability to recover faster and adapt more gracefully.
             </p>
             <p>
@@ -247,10 +247,10 @@ export function ScienceOfReflection() {
             <h2 id="section-worry-loops" className="text-xl lg:text-2xl font-bold text-text-primary mb-4">
               Breaking Anxiety Worry Loops with Structured Voice Journaling
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-base leading-relaxed">
               In today's fast-paced world, our minds often get trapped in endless loops of worry. Instead of fighting intrusive thoughts — which research shows often makes them stronger — voice journaling helps you give your brain what it truly needs: a sense of control and completion.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-base leading-relaxed">
               The approach is structured and evidence-informed. First, you set a specific <strong className="text-text-primary font-semibold">worry time</strong> each day — a 5-10 minute slot when you have mental energy, just not right before bed. As anxious thoughts arise throughout the day, Vocolens captures each concern in a dedicated voice entry. This act of recording creates a sense of containment: your brain knows the worry is stored somewhere safe, releasing it from active processing.
             </p>
             <p>
@@ -264,10 +264,10 @@ export function ScienceOfReflection() {
             <h2 id="section-structured-review" className="text-xl lg:text-2xl font-bold text-text-primary mb-4">
               Pattern Awareness and Building Long-Term Emotional Resilience
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-base leading-relaxed">
               The power of consistent voice journaling extends beyond individual sessions. Over time, you see patterns emerge — helping you identify when certain worries spike, which contexts trigger them, and how long they typically last. That pattern awareness is itself transformative, because you shift from reacting to individual emotional events to understanding the architecture of your emotional life.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-base leading-relaxed">
               For long-standing thought loops, pairing voice journaling with a counter-narrative practice — recording evidence that directly challenges your negative beliefs — further accelerates resilience building. What we focus on expands, so by using voice journaling daily, you actively condition your mind toward strength rather than anxiety.
             </p>
             <p>
@@ -314,11 +314,11 @@ export function ScienceOfReflection() {
             >
               <div className="flex items-start justify-between gap-3">
                 <div className="flex-1">
-                  <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">Mental Wellness & Self-Discovery</p>
+                  <p className="font-semibold text-primary uppercase tracking-wider mb-1 text-base leading-relaxed">Mental Wellness & Self-Discovery</p>
                   <h4 className="text-base font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
                     Building Emotional Awareness: How Pattern Recognition Transforms Self-Understanding
                   </h4>
-                  <p className="text-sm text-text-secondary">Discover metacognitive awareness and how recognizing emotional patterns accelerates personal growth and self-understanding.</p>
+                  <p className="text-text-secondary text-base leading-relaxed">Discover metacognitive awareness and how recognizing emotional patterns accelerates personal growth and self-understanding.</p>
                 </div>
                 <ArrowUpRight className="w-5 h-5 text-primary flex-shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" aria-hidden="true" />
               </div>
@@ -331,7 +331,7 @@ export function ScienceOfReflection() {
             <h2 className="text-lg font-bold text-text-primary mb-3">
               Start Building Your Emotional Resilience Through Voice Journaling Today
             </h2>
-            <p className="text-text-secondary text-sm lg:text-base leading-relaxed mb-5">
+            <p className="text-text-secondary mb-5 text-base leading-relaxed">
               Let Vocolens be your trusted guide — breaking you free from thought loops, one voice journal at a time, and paving your path to lasting calm and clarity.
             </p>
             <div className="flex flex-wrap gap-3">
