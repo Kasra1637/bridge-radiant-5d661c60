@@ -39,7 +39,7 @@ export function Resources() {
           <h1 className="text-4xl lg:text-5xl font-bold text-text-primary mb-5 leading-tight">
             Resources & Guides
           </h1>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-text-secondary max-w-2xl mx-auto text-base leading-relaxed">
             Evidence-based guides on mental wellness, journaling, and emotional resilience — backed by peer-reviewed research.
           </p>
         </div>
@@ -86,7 +86,7 @@ export function Resources() {
                 >
                   How Naming Your Emotions with Voice Journaling Reduces Stress and Builds Emotional Resilience
                 </h2>
-                <p className="text-text-secondary leading-relaxed line-clamp-3" itemProp="description">
+                <p className="text-text-secondary line-clamp-3 text-base leading-relaxed" itemProp="description">
                   Neuroscience research by Lieberman (2007) proves that labeling emotions reduces amygdala activity and calms the nervous system. Discover how daily voice journaling with Vocolens uses this science to help you reduce anxiety, create mental space, and build lasting emotional resilience.
                 </p>
                 <div className="flex items-center justify-between mt-5">
@@ -145,7 +145,7 @@ export function Resources() {
                 >
                   Building Emotional Awareness: How Pattern Recognition in Voice Journaling Transforms Self-Understanding
                 </h2>
-                <p className="text-text-secondary leading-relaxed line-clamp-3" itemProp="description">
+                <p className="text-text-secondary line-clamp-3 text-base leading-relaxed" itemProp="description">
                   Discover how metacognitive awareness and pattern recognition through daily voice journaling rewire your brain for emotional intelligence. Learn to identify triggers and behavioral cycles with Vocolens' emotion tracking.
                 </p>
                 <div className="flex items-center justify-between mt-5">

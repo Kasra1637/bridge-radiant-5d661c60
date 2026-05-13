@@ -86,7 +86,7 @@ export function JournalScreen({ isActive }: Props) {
         <h3 className="text-white text-[17px] font-bold font-comfortaa leading-tight">
           Morning Reflections
         </h3>
-        <p className="text-white/40 text-[9.5px] mt-0.5">Wednesday, February 4, 2026</p>
+        <p className="text-white/40 text-[9.5px] mt-0.5 text-base leading-relaxed">Wednesday, February 4, 2026</p>
       </div>
 
       <div className="flex items-center gap-3.5 px-4 mb-3">
@@ -110,7 +110,7 @@ export function JournalScreen({ isActive }: Props) {
           style={{ background: 'rgba(255,255,255,0.12)' }}
         >
           <h4 className="text-white text-[11px] font-bold mb-1.5">Full Transcript</h4>
-          <p className="text-white/60 text-[9.5px] leading-relaxed">
+          <p className="text-white/60 text-[9.5px] text-base leading-relaxed">
             Started my day with a great workout. Feeling energized and ready to tackle the day.
             The sunrise was beautiful and I feel grateful for this moment of peace.
           </p>
@@ -124,7 +124,7 @@ export function JournalScreen({ isActive }: Props) {
             <h4 className="text-white text-[11px] font-bold">Emotion Breakdown</h4>
             <ChevronUp className="w-3.5 h-3.5 text-white/35" />
           </div>
-          <p className="text-white/25 text-[7px] uppercase tracking-widest mb-2.5">
+          <p className="text-white/25 text-[7px] uppercase tracking-widest mb-2.5 text-base leading-relaxed">
             Detected Emotions
           </p>
           <EmotionBar

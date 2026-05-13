@@ -17,7 +17,7 @@ export function RecordingScreen({ isActive }: Props) {
           <h3 className="text-white text-lg font-bold font-comfortaa leading-tight">
             Speak your mind
           </h3>
-          <p className="text-white/55 text-[10px] mt-0.5">What's on your mind today?</p>
+          <p className="text-white/55 text-[10px] mt-0.5 text-base leading-relaxed">What's on your mind today?</p>
         </div>
       </div>
 

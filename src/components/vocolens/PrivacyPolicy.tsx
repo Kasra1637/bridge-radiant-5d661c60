@@ -12,8 +12,8 @@ export function PrivacyPolicy() {
           <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-2">
             Privacy Policy
           </h1>
-          <p className="text-text-secondary text-lg mb-4">Vocolens</p>
-          <p className="text-text-muted text-base">
+          <p className="text-text-secondary mb-4 text-base leading-relaxed">Vocolens</p>
+          <p className="text-text-muted text-base leading-relaxed">
             Effective Date: March 10, 2026
           </p>
         </div>
@@ -23,10 +23,10 @@ export function PrivacyPolicy() {
         <AnimatedSection animation="fade-in-up" delay={0.1}>
           <div className="bg-gradient-to-br from-primary/10 to-transparent rounded-2xl p-6 border border-primary/20">
             <h2 className="text-2xl font-bold text-text-primary mb-4">Our Core Commitment</h2>
-            <p className="text-text-secondary leading-relaxed mb-4">
+            <p className="text-text-secondary mb-4 text-base leading-relaxed">
               Vocolens is built on a simple principle: your personal reflections belong to you. We designed the app so your journal entries are stored only on your device. We do not operate user accounts, we do not store your data on our servers, and we do not sell or share your information with advertisers.
             </p>
-            <p className="text-text-secondary leading-relaxed mb-4">
+            <p className="text-text-secondary mb-4 text-base leading-relaxed">
               This policy explains exactly what data leaves your device, why, and what happens to it.
             </p>
           </div>
@@ -42,7 +42,7 @@ export function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-text-primary mb-3">
                   1. Data That Stays on Your Device
                 </h2>
-                <p className="text-text-secondary leading-relaxed mb-4">
+                <p className="text-text-secondary mb-4 text-base leading-relaxed">
                   The following data never leaves your device under normal operation:
                 </p>
 
@@ -77,7 +77,7 @@ export function PrivacyPolicy() {
                   </li>
                 </ul>
 
-                <p className="text-text-secondary leading-relaxed mt-4">
+                <p className="text-text-secondary mt-4 text-base leading-relaxed">
                   All of this data is stored locally using AsyncStorage on your device. There is no cloud synchronisation, no server-side backup, and no remote access to this data.
                 </p>
               </div>
@@ -95,7 +95,7 @@ export function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-text-primary mb-3">
                   2. Data Sent to Third-Party Services
                 </h2>
-                <p className="text-text-secondary leading-relaxed mb-4">
+                <p className="text-text-secondary mb-4 text-base leading-relaxed">
                   Two external services receive data when you create a journal entry:
                 </p>
 
@@ -175,12 +175,12 @@ export function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-text-primary mb-3">
                   3. Audio Data
                 </h2>
-                <p className="text-text-secondary leading-relaxed mb-4">
+                <p className="text-text-secondary mb-4 text-base leading-relaxed">
                   Audio recordings are saved as .wav files in your device's local app storage directory.
                 </p>
 
                 <div className="space-y-3">
-                  <p className="text-text-secondary leading-relaxed">
+                  <p className="text-text-secondary text-base leading-relaxed">
                     When you record a journal entry:
                   </p>
                   <ul className="space-y-2 text-text-secondary">
@@ -229,7 +229,7 @@ export function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-text-primary mb-3">
                   4. Local Notifications
                 </h2>
-                <p className="text-text-secondary leading-relaxed mb-4">
+                <p className="text-text-secondary mb-4 text-base leading-relaxed">
                   Vocolens can send daily reminder notifications to encourage journaling. These notifications:
                 </p>
 
@@ -266,12 +266,12 @@ export function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-text-primary mb-3">
                   5. In-App Purchases
                 </h2>
-                <p className="text-text-secondary leading-relaxed mb-4">
+                <p className="text-text-secondary mb-4 text-base leading-relaxed">
                   Vocolens offers a premium subscription. Subscription purchases are handled by Apple App Store or Google Play.
                 </p>
 
                 <div className="space-y-3">
-                  <p className="text-text-secondary leading-relaxed">
+                  <p className="text-text-secondary text-base leading-relaxed">
                     We use RevenueCat to manage subscription status. RevenueCat may receive your device's anonymous app store identifier to verify purchase status. No personal information beyond purchase status is shared. See <a href="https://revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">revenuecat.com/privacy</a>.
                   </p>
                 </div>
@@ -290,7 +290,7 @@ export function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-text-primary mb-3">
                   6. No Analytics or Tracking
                 </h2>
-                <p className="text-text-secondary leading-relaxed mb-4">
+                <p className="text-text-secondary mb-4 text-base leading-relaxed">
                   Vocolens does not include any third-party analytics, advertising, or crash-reporting SDKs. We do not track:
                 </p>
 
@@ -317,7 +317,7 @@ export function PrivacyPolicy() {
                   </li>
                 </ul>
 
-                <p className="text-text-secondary leading-relaxed mt-4">
+                <p className="text-text-secondary mt-4 text-base leading-relaxed">
                   All usage statistics visible in the app (streaks, entry counts, mood trends) are computed locally from your on-device data and never transmitted.
                 </p>
               </div>
@@ -335,7 +335,7 @@ export function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-text-primary mb-3">
                   7. Security
                 </h2>
-                <p className="text-text-secondary leading-relaxed mb-4">
+                <p className="text-text-secondary mb-4 text-base leading-relaxed">
                   We take reasonable measures to protect your data:
                 </p>
 
@@ -372,7 +372,7 @@ export function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-text-primary mb-3">
                   8. Your Rights & Controls
                 </h2>
-                <p className="text-text-secondary leading-relaxed mb-4">
+                <p className="text-text-secondary mb-4 text-base leading-relaxed">
                   You have full control over your data at all times:
                 </p>
 
@@ -417,7 +417,7 @@ export function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-text-primary mb-3">
                   9. Children's Privacy
                 </h2>
-                <p className="text-text-secondary leading-relaxed mb-3">
+                <p className="text-text-secondary mb-3 text-base leading-relaxed">
                   Vocolens is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you believe a child under 13 has used the app and their data has been transmitted to a third-party service, please contact us at{' '}
                   <a href="mailto:connect@vocolens.com" className="text-primary hover:underline font-medium">
                     connect@vocolens.com
@@ -438,10 +438,10 @@ export function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold text-text-primary mb-3">
                   10. Changes to This Policy
                 </h2>
-                <p className="text-text-secondary leading-relaxed mb-3">
+                <p className="text-text-secondary mb-3 text-base leading-relaxed">
                   We may update this Privacy Policy from time to time. When we do, we will update the effective date at the top of this document. Continued use of the app after changes constitutes acceptance of the revised policy.
                 </p>
-                <p className="text-text-secondary leading-relaxed">
+                <p className="text-text-secondary text-base leading-relaxed">
                   For significant changes that affect how your data is handled, we will notify you through an in-app prompt.
                 </p>
               </div>
@@ -452,10 +452,10 @@ export function PrivacyPolicy() {
         <AnimatedSection animation="fade-in-up" delay={1.1}>
           <div className="bg-gradient-to-br from-primary/10 to-transparent rounded-2xl p-6 border border-primary/20">
             <h2 className="text-2xl font-bold text-text-primary mb-4">Contact Us</h2>
-            <p className="text-text-secondary leading-relaxed mb-3">
+            <p className="text-text-secondary mb-3 text-base leading-relaxed">
               If you have questions about this Privacy Policy or how your data is handled, please contact us at:
             </p>
-            <p className="text-text-secondary text-lg font-medium">
+            <p className="text-text-secondary font-medium text-base leading-relaxed">
               <a href="mailto:connect@vocolens.com" className="text-primary hover:underline">
                 connect@vocolens.com
               </a>
