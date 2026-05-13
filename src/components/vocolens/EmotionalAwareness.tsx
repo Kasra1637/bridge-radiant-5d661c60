@@ -80,10 +80,10 @@ export function EmotionalAwareness() {
               <Radar className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <span className="text-xs font-semibold text-primary uppercase tracking-wider block" itemProp="articleSection">
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider block" itemProp="articleSection">
                 Mental Wellness &amp; Self-Discovery
               </span>
-              <span className="flex items-center gap-1 text-xs text-text-muted mt-0.5">
+              <span className="flex items-center gap-1 text-sm text-text-muted mt-0.5">
                 <Clock className="w-3 h-3" aria-hidden="true" />
                 6 min read
               </span>
@@ -143,7 +143,7 @@ export function EmotionalAwareness() {
             </p>
             <blockquote className="border-l-4 border-primary/40 pl-5 my-5 italic text-text-secondary bg-primary/4 rounded-r-xl py-4 pr-4">
               "The faculty to observe one's own thoughts is a fundamental human capacity, yet most of us go through life without fully developing it. Metacognitive awareness is where genuine change begins."
-              <cite className="block mt-2 text-xs not-italic text-text-muted font-medium">— Research on Metacognitive Awareness in Emotional Regulation</cite>
+              <cite className="block mt-2 text-sm not-italic text-text-muted font-medium">— Research on Metacognitive Awareness in Emotional Regulation</cite>
             </blockquote>
             <p>
               When you pause to reflect on an emotional reaction—to ask yourself <em>why</em> you responded that way—you activate prefrontal regions involved in self-awareness and emotional insight. Over time, this practice literally rewires your brain, strengthening the neural pathways that support emotional intelligence.
@@ -238,7 +238,7 @@ export function EmotionalAwareness() {
 
         <AnimatedSection animation="fade-in-up" delay={0.55}>
           <div className="py-8 border-t border-primary/10">
-            <h3 className="text-lg font-bold text-text-primary mb-6">Explore Related Articles</h3>
+            <h3 className="font-bold text-text-primary mb-6 text-xl">Explore Related Articles</h3>
             <button
               onClick={() => navigate({ to: '/resources/science-of-reflection' })}
               className="w-full text-left p-5 rounded-xl border border-primary/15 bg-primary/3 hover:bg-primary/5 hover:border-primary/25 transition-all group"
@@ -246,7 +246,7 @@ export function EmotionalAwareness() {
               <div className="flex items-start justify-between gap-3">
                 <div className="flex-1">
                   <p className="font-semibold text-primary uppercase tracking-wider mb-1 text-base leading-relaxed">Neuroscience & Mental Wellness</p>
-                  <h4 className="text-base font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
+                  <h4 className="font-bold text-text-primary group-hover:text-primary transition-colors mb-2 text-lg">
                     How Naming Your Emotions Reduces Stress and Builds Resilience
                   </h4>
                   <p className="text-text-secondary text-base leading-relaxed">Learn how affect labeling decreases amygdala activity and calms your nervous system through daily voice journaling.</p>

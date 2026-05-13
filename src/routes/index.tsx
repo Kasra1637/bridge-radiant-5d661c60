@@ -74,7 +74,7 @@ function Home() {
               <div className="w-16 h-16 rounded-full bg-[#E9DFFE] flex items-center justify-center mx-auto mb-4 shadow-clay">
                 <Frown className="w-8 h-8 text-[#9b87f5]" />
               </div>
-              <h3 className="text-2xl font-bold text-text-primary mb-3">The problem</h3>
+              <h3 className="font-bold text-text-primary mb-3 text-xl">The problem</h3>
               <p className="text-text-secondary text-base leading-relaxed">
                 Living with Tourette's, my mind races fast. Traditional journaling felt like catching lightning with a pencil—frustrating, slow, and never truly me.
               </p>
@@ -86,7 +86,7 @@ function Home() {
               <div className="w-16 h-16 rounded-full bg-[#E9DFFE] flex items-center justify-center mx-auto mb-4 shadow-clay">
                 <MessageSquare className="w-8 h-8 text-[#9b87f5]" />
               </div>
-              <h3 className="text-2xl font-bold text-text-primary mb-3">Daily struggle</h3>
+              <h3 className="font-bold text-text-primary mb-3 text-xl">Daily struggle</h3>
               <p className="text-text-secondary text-base leading-relaxed">
                 Writing was a fight with myself. My thoughts raced while my hand cramped trying to keep up. I needed something as fast as my mind.
               </p>
@@ -98,7 +98,7 @@ function Home() {
               <div className="w-16 h-16 rounded-full bg-[#E9DFFE] flex items-center justify-center mx-auto mb-4 shadow-clay">
                 <Lightbulb className="w-8 h-8 text-[#9b87f5]" />
               </div>
-              <h3 className="text-2xl font-bold text-text-primary mb-3">The breakthrough</h3>
+              <h3 className="font-bold text-text-primary mb-3 text-xl">The breakthrough</h3>
               <p className="text-text-secondary text-base leading-relaxed">
                 So I built this app. Now I just talk, and my thoughts are captured instantly. No barriers between mind and app. Finally, freedom to be authentically me.
               </p>
@@ -126,7 +126,7 @@ function Home() {
               <div className="w-20 h-20 rounded-full bg-[#E9DFFE] flex items-center justify-center mx-auto mb-4 shadow-clay">
                 <Mic className="w-10 h-10 text-[#9b87f5]" />
               </div>
-              <h3 className="text-2xl font-bold text-text-primary mb-3">Speak Freely</h3>
+              <h3 className="font-bold text-text-primary mb-3 text-xl">Speak Freely</h3>
               <p className="text-text-secondary text-base leading-relaxed">
                 Your thoughts, captured instantly. No friction, no judgment—just you and your voice.
               </p>
@@ -138,7 +138,7 @@ function Home() {
               <div className="w-20 h-20 rounded-full bg-[#E9DFFE] flex items-center justify-center mx-auto mb-4 shadow-clay">
                 <BarChart3 className="w-10 h-10 text-[#9b87f5]" />
               </div>
-              <h3 className="text-2xl font-bold text-text-primary mb-3">Understand Instantly</h3>
+              <h3 className="font-bold text-text-primary mb-3 text-xl">Understand Instantly</h3>
               <p className="text-text-secondary text-base leading-relaxed">
                 AI reveals your emotional triggers, patterns, and what truly drives your mood.
               </p>
@@ -150,7 +150,7 @@ function Home() {
               <div className="w-20 h-20 rounded-full bg-[#E9DFFE] flex items-center justify-center mx-auto mb-4 shadow-clay">
                 <Sparkles className="w-10 h-10 text-[#9b87f5]" />
               </div>
-              <h3 className="text-2xl font-bold text-text-primary mb-3">Track Growth</h3>
+              <h3 className="font-bold text-text-primary mb-3 text-xl">Track Growth</h3>
               <p className="text-text-secondary text-base leading-relaxed">
                 See your progress, celebrate wins, and watch yourself evolve over weeks and months.
               </p>
@@ -220,7 +220,7 @@ function Home() {
                 <Clock className="w-6 h-6 text-[#9b87f5]" />
               </div>
               <div>
-                <h4 className="font-bold text-text-primary mb-1">Sentiment Timeline</h4>
+                <h4 className="font-bold text-text-primary mb-1 text-lg">Sentiment Timeline</h4>
                 <p className="text-text-secondary text-base leading-relaxed">Track emotional patterns over time</p>
               </div>
             </div>
@@ -229,7 +229,7 @@ function Home() {
                 <Cloud className="w-6 h-6 text-[#9b87f5]" />
               </div>
               <div>
-                <h4 className="font-bold text-text-primary mb-1">Emotion Cloud</h4>
+                <h4 className="font-bold text-text-primary mb-1 text-lg">Emotion Cloud</h4>
                 <p className="text-text-secondary text-base leading-relaxed">Visualize frequent emotions</p>
               </div>
             </div>
@@ -238,7 +238,7 @@ function Home() {
                 <Activity className="w-6 h-6 text-[#9b87f5]" />
               </div>
               <div>
-                <h4 className="font-bold text-text-primary mb-1">Voice Analysis</h4>
+                <h4 className="font-bold text-text-primary mb-1 text-lg">Voice Analysis</h4>
                 <p className="text-text-secondary text-base leading-relaxed">Analyze tone and energy</p>
               </div>
             </div>
@@ -247,7 +247,7 @@ function Home() {
                 <Brain className="w-6 h-6 text-[#9b87f5]" />
               </div>
               <div>
-                <h4 className="font-bold text-text-primary mb-1">AI Insights</h4>
+                <h4 className="font-bold text-text-primary mb-1 text-lg">AI Insights</h4>
                 <p className="text-text-secondary text-base leading-relaxed">Get personalized patterns</p>
               </div>
             </div>
@@ -256,8 +256,8 @@ function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-xl p-5 border border-primary/10">
               <div className="flex items-start justify-between mb-3">
-                <h4 className="font-bold text-text-primary">Emotional Vocabulary Analysis</h4>
-                <span className="px-2 py-1 bg-primary text-white text-xs rounded-full font-semibold">HIGH</span>
+                <h4 className="font-bold text-text-primary text-lg">Emotional Vocabulary Analysis</h4>
+                <span className="px-2 py-1 bg-primary text-white text-sm rounded-full font-semibold">HIGH</span>
               </div>
               <p className="text-text-secondary mb-3 text-base leading-relaxed">
                 Tracks the complexity and richness of your emotional expression over time, revealing your growing self-awareness.
@@ -270,8 +270,8 @@ function Home() {
 
             <div className="bg-gradient-to-br from-accent/5 to-transparent rounded-xl p-5 border border-accent/10">
               <div className="flex items-start justify-between mb-3">
-                <h4 className="font-bold text-text-primary">Trigger Detection</h4>
-                <span className="px-2 py-1 bg-amber-500 text-white text-xs rounded-full font-semibold">MEDIUM</span>
+                <h4 className="font-bold text-text-primary text-lg">Trigger Detection</h4>
+                <span className="px-2 py-1 bg-amber-500 text-white text-sm rounded-full font-semibold">MEDIUM</span>
               </div>
               <p className="text-text-secondary mb-3 text-base leading-relaxed">
                 Identifies correlations between specific topics and your emotional responses with confidence scores.
@@ -284,8 +284,8 @@ function Home() {
 
             <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-xl p-5 border border-primary/10">
               <div className="flex items-start justify-between mb-3">
-                <h4 className="font-bold text-text-primary">Emotional Coherence Analysis</h4>
-                <span className="px-2 py-1 bg-blue-500 text-white text-xs rounded-full font-semibold">INFO</span>
+                <h4 className="font-bold text-text-primary text-lg">Emotional Coherence Analysis</h4>
+                <span className="px-2 py-1 bg-blue-500 text-white text-sm rounded-full font-semibold">INFO</span>
               </div>
               <p className="text-text-secondary mb-3 text-base leading-relaxed">
                 Detects when your expressed emotions conflict with each other, helping you understand inner tensions.
@@ -298,8 +298,8 @@ function Home() {
 
             <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-xl p-5 border border-primary/10">
               <div className="flex items-start justify-between mb-3">
-                <h4 className="font-bold text-text-primary">Mood Cycle Detection</h4>
-                <span className="px-2 py-1 bg-primary text-white text-xs rounded-full font-semibold">HIGH</span>
+                <h4 className="font-bold text-text-primary text-lg">Mood Cycle Detection</h4>
+                <span className="px-2 py-1 bg-primary text-white text-sm rounded-full font-semibold">HIGH</span>
               </div>
               <p className="text-text-secondary mb-3 text-base leading-relaxed">
                 Discovers temporal patterns like morning energy dips, weekend recovery cycles, and seasonal mood shifts.
@@ -312,8 +312,8 @@ function Home() {
 
             <div className="bg-gradient-to-br from-accent/5 to-transparent rounded-xl p-5 border border-accent/10">
               <div className="flex items-start justify-between mb-3">
-                <h4 className="font-bold text-text-primary">Emotional Shift Tracking</h4>
-                <span className="px-2 py-1 bg-amber-500 text-white text-xs rounded-full font-semibold">MEDIUM</span>
+                <h4 className="font-bold text-text-primary text-lg">Emotional Shift Tracking</h4>
+                <span className="px-2 py-1 bg-amber-500 text-white text-sm rounded-full font-semibold">MEDIUM</span>
               </div>
               <p className="text-text-secondary mb-3 text-base leading-relaxed">
                 Monitors how you transition between emotional states and identifies what helps you recover from difficult feelings.
@@ -326,8 +326,8 @@ function Home() {
 
             <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-xl p-5 border border-primary/10">
               <div className="flex items-start justify-between mb-3">
-                <h4 className="font-bold text-text-primary">Growth Pattern Recognition</h4>
-                <span className="px-2 py-1 bg-emerald-500 text-white text-xs rounded-full font-semibold">GROWTH</span>
+                <h4 className="font-bold text-text-primary text-lg">Growth Pattern Recognition</h4>
+                <span className="px-2 py-1 bg-emerald-500 text-white text-sm rounded-full font-semibold">GROWTH</span>
               </div>
               <p className="text-text-secondary mb-3 text-base leading-relaxed">
                 Tracks your resilience development and self-awareness evolution, celebrating your progress over time.
@@ -339,7 +339,7 @@ function Home() {
             </div>
           </div>
           <div className="p-8 text-center">
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6 text-xl">
               Download & start using Vocolens now!
             </h3>
             <img
@@ -368,7 +368,7 @@ function Home() {
                 <div key={i} className="w-5 h-5 text-amber-400">&#9733;</div>
               ))}
             </div>
-            <h4 className="font-bold text-text-primary mb-1">Sarah Chen</h4>
+            <h4 className="font-bold text-text-primary mb-1 text-lg">Sarah Chen</h4>
             <p className="text-text-muted mb-4 text-base leading-relaxed">UX Designer & Mom</p>
             <p className="text-text-secondary mb-4 text-base leading-relaxed">
               "This AI voice journal has been life-changing for me. As a busy mom and designer, I struggle to find time to reflect on my thoughts, although this audio journal app makes it so easy to capture my emotions on the go every day."
@@ -386,7 +386,7 @@ function Home() {
                 <div key={i} className="w-5 h-5 text-amber-400">&#9733;</div>
               ))}
             </div>
-            <h4 className="font-bold text-text-primary mb-1">Marcus Rodriguez</h4>
+            <h4 className="font-bold text-text-primary mb-1 text-lg">Marcus Rodriguez</h4>
             <p className="text-text-muted mb-4 text-base leading-relaxed">Tech Entrepreneur</p>
             <p className="text-text-secondary mb-4 text-base leading-relaxed">
               "The AI insights are incredibly impressive. I've tried many journaling apps but none have made reflections this meaningful. Understanding my mental patterns helps me make better business and life decisions every single day now."
@@ -404,7 +404,7 @@ function Home() {
                 <div key={i} className="w-5 h-5 text-amber-400">&#9733;</div>
               ))}
             </div>
-            <h4 className="font-bold text-text-primary mb-1">Alex Thompson</h4>
+            <h4 className="font-bold text-text-primary mb-1 text-lg">Alex Thompson</h4>
             <p className="text-text-muted mb-4 text-base leading-relaxed">College Student</p>
             <p className="text-text-secondary mb-4 text-base leading-relaxed">
               "I never thought I'd be into journaling, but this app changed my perspective completely. The voice recording removes the intimidation of writing, and I love seeing my emotional growth over time, which is remarkable."

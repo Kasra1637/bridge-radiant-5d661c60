@@ -32,7 +32,7 @@ export function Resources() {
 
       <div>
         <div className="text-center mb-6">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/8 text-primary text-xs font-semibold uppercase tracking-widest rounded-full mb-5">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/8 text-primary text-sm font-semibold uppercase tracking-widest rounded-full mb-5">
             <BookOpen className="w-3.5 h-3.5" />
             Learning Hub
           </span>
@@ -72,10 +72,10 @@ export function Resources() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex flex-wrap items-center gap-3 mb-3">
-                  <span className="text-xs font-semibold text-primary uppercase tracking-wider" itemProp="articleSection">
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider" itemProp="articleSection">
                     Neuroscience &amp; Mental Wellness
                   </span>
-                  <span className="flex items-center gap-1 text-xs text-text-muted">
+                  <span className="flex items-center gap-1 text-sm text-text-muted">
                     <Clock className="w-3 h-3" />
                     5 min read
                   </span>
@@ -96,7 +96,7 @@ export function Resources() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </span>
-                  <span className="text-xs text-text-muted px-2.5 py-1 bg-primary/5 rounded-full border border-primary/10">
+                  <span className="text-sm text-text-muted px-2.5 py-1 bg-primary/5 rounded-full border border-primary/10">
                     Emotion Labeling · Stress Relief Journaling · Resilience
                   </span>
                 </div>
@@ -131,10 +131,10 @@ export function Resources() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex flex-wrap items-center gap-3 mb-3">
-                  <span className="text-xs font-semibold text-primary uppercase tracking-wider" itemProp="articleSection">
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider" itemProp="articleSection">
                     Mental Wellness &amp; Self-Discovery
                   </span>
-                  <span className="flex items-center gap-1 text-xs text-text-muted">
+                  <span className="flex items-center gap-1 text-sm text-text-muted">
                     <Clock className="w-3 h-3" />
                     6 min read
                   </span>
@@ -155,7 +155,7 @@ export function Resources() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </span>
-                  <span className="text-xs text-text-muted px-2.5 py-1 bg-primary/5 rounded-full border border-primary/10">
+                  <span className="text-sm text-text-muted px-2.5 py-1 bg-primary/5 rounded-full border border-primary/10">
                     Pattern Recognition · Emotional Intelligence · Self-Awareness
                   </span>
                 </div>
