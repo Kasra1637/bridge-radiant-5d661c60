@@ -21,17 +21,8 @@ const proofCards = [
         <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
       </svg>
     ),
-    title: 'AI emotional baseline',
-    desc: 'Each entry is read for emotional patterns, intensity, and overlapping feelings — generating a starting point, never a verdict.',
-  },
-  {
-    icon: (
-      <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 6h18M6 12h12M9 18h6" />
-      </svg>
-    ),
-    title: 'Multiple ranked emotions',
-    desc: 'Instead of one label, Vocolens surfaces several co-existing emotions with intensity tiers inspired by Plutchik’s wheel.',
+    title: 'AI reads layered emotions',
+    desc: 'Several co-existing feelings surface with intensity tiers — a starting point, never a verdict.',
   },
   {
     icon: (
@@ -40,7 +31,7 @@ const proofCards = [
       </svg>
     ),
     title: 'Reflect and refine',
-    desc: 'Adjust what doesn’t feel true. Your refinement is preserved beside the AI reading — both layers stay visible.',
+    desc: 'Adjust what doesn’t feel true. Your refinement is preserved beside the AI reading.',
   },
   {
     icon: (
@@ -48,8 +39,8 @@ const proofCards = [
         <path d="M3 12a9 9 0 0 1 18 0" /><path d="M3 12a9 9 0 0 0 18 0" /><path d="M12 3v18" />
       </svg>
     ),
-    title: 'Patterns that evolve with you',
-    desc: 'Your refinements teach the system over time, so emotional insights grow more personal — without overriding your perspective.',
+    title: 'Patterns evolve with you',
+    desc: 'Your refinements teach the system over time, so insights grow more personal.',
   },
 ];
 
@@ -72,20 +63,6 @@ export function EmotionDetection() {
           Vocolens reads every layer of feeling — you refine what's true.
         </p>
 
-        {/* Pull quote */}
-        <div className="bg-white rounded-2xl px-6 py-5 shadow-clay-sm border border-primary/8 text-left flex gap-4 items-start">
-          <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-            <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-            </svg>
-          </div>
-          <div>
-            <p className="text-text-secondary text-sm leading-relaxed mb-2">
-              "It didn’t try to flatten what I was feeling into one word. I saw the layers — the hope underneath the worry — and I could nudge the reading until it felt like mine."
-            </p>
-            <p className="text-xs font-semibold text-text-muted">Beta user · early reflection sessions</p>
-          </div>
-        </div>
       </AnimatedSection>
 
       {/* Hybrid workflow visualization */}
@@ -198,33 +175,12 @@ export function EmotionDetection() {
             </div>
           </div>
 
-          {/* Footer strip */}
-          <div className="flex flex-wrap items-center justify-between gap-3 mt-6 pt-5 border-t border-gray-100">
-            <p className="text-xs text-text-muted flex items-center gap-1.5">
-              <span className="text-amber-400 text-sm leading-none">★</span>
-              <span>Your refinement is never overridden — it teaches the model gently over time.</span>
-            </p>
-            <div className="flex gap-2">
-              <div className="flex items-center gap-1.5 bg-primary/5 text-primary text-xs font-semibold px-3 py-1.5 rounded-full border border-primary/10">
-                AI baseline
-              </div>
-              <span className="text-text-muted text-xs">+</span>
-              <div className="flex items-center gap-1.5 bg-amber-50 text-amber-700 text-xs font-semibold px-3 py-1.5 rounded-full border border-amber-100">
-                Your reflection
-              </div>
-              <span className="text-text-muted text-xs">=</span>
-              <div className="flex items-center gap-1.5 bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1.5 rounded-full border border-emerald-100">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
-                Hybrid interpretation
-              </div>
-            </div>
-          </div>
         </div>
       </AnimatedSection>
 
       {/* Proof cards */}
       <AnimatedSection animation="fade-in-up" delay={0.15}>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {proofCards.map((card) => (
             <div
               key={card.title}
