@@ -37,7 +37,7 @@ function Home() {
                 <span className="hero-line-3"><span className="hero-emphasis">your true self</span></span>
               </h1>
             </div>
-            <p className="text-text-secondary mb-8 max-w-md text-base leading-relaxed">
+            <p className="text-text-secondary mb-8 max-w-md text-xl leading-relaxed">
               Speak your mind. Find your clarity. An audio journal app that listens.
             </p>
           </AnimatedSection>
