@@ -21,17 +21,8 @@ const proofCards = [
         <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
       </svg>
     ),
-    title: 'AI emotional baseline',
-    desc: 'Each entry is read for emotional patterns, intensity, and overlapping feelings — generating a starting point, never a verdict.',
-  },
-  {
-    icon: (
-      <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 6h18M6 12h12M9 18h6" />
-      </svg>
-    ),
-    title: 'Multiple ranked emotions',
-    desc: 'Instead of one label, Vocolens surfaces several co-existing emotions with intensity tiers inspired by Plutchik’s wheel.',
+    title: 'AI reads layered emotions',
+    desc: 'Several co-existing feelings surface with intensity tiers — a starting point, never a verdict.',
   },
   {
     icon: (
@@ -40,7 +31,7 @@ const proofCards = [
       </svg>
     ),
     title: 'Reflect and refine',
-    desc: 'Adjust what doesn’t feel true. Your refinement is preserved beside the AI reading — both layers stay visible.',
+    desc: 'Adjust what doesn’t feel true. Your refinement is preserved beside the AI reading.',
   },
   {
     icon: (
@@ -48,8 +39,8 @@ const proofCards = [
         <path d="M3 12a9 9 0 0 1 18 0" /><path d="M3 12a9 9 0 0 0 18 0" /><path d="M12 3v18" />
       </svg>
     ),
-    title: 'Patterns that evolve with you',
-    desc: 'Your refinements teach the system over time, so emotional insights grow more personal — without overriding your perspective.',
+    title: 'Patterns evolve with you',
+    desc: 'Your refinements teach the system over time, so insights grow more personal.',
   },
 ];
 
