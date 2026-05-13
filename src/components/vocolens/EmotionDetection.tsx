@@ -175,27 +175,6 @@ export function EmotionDetection() {
             </div>
           </div>
 
-          {/* Footer strip */}
-          <div className="flex flex-wrap items-center justify-between gap-3 mt-6 pt-5 border-t border-gray-100">
-            <p className="text-xs text-text-muted flex items-center gap-1.5">
-              <span className="text-amber-400 text-sm leading-none">★</span>
-              <span>Your refinement is never overridden — it teaches the model gently over time.</span>
-            </p>
-            <div className="flex gap-2">
-              <div className="flex items-center gap-1.5 bg-primary/5 text-primary text-xs font-semibold px-3 py-1.5 rounded-full border border-primary/10">
-                AI baseline
-              </div>
-              <span className="text-text-muted text-xs">+</span>
-              <div className="flex items-center gap-1.5 bg-amber-50 text-amber-700 text-xs font-semibold px-3 py-1.5 rounded-full border border-amber-100">
-                Your reflection
-              </div>
-              <span className="text-text-muted text-xs">=</span>
-              <div className="flex items-center gap-1.5 bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1.5 rounded-full border border-emerald-100">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
-                Hybrid interpretation
-              </div>
-            </div>
-          </div>
         </div>
       </AnimatedSection>
 
