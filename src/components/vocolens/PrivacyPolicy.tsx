@@ -103,7 +103,7 @@ export function PrivacyPolicy() {
                   <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-lg p-4 border border-primary/10">
                     <div className="flex items-start justify-between mb-3">
                       <div>
-                        <h4 className="font-bold text-text-primary text-lg mb-2">1. Deepgram (Speech-to-Text)</h4>
+                        <h4 className="font-bold text-text-primary mb-2 text-lg">1. Deepgram (Speech-to-Text)</h4>
                       </div>
                     </div>
                     <ul className="space-y-2 text-text-secondary text-sm">
@@ -129,7 +129,7 @@ export function PrivacyPolicy() {
                   <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-lg p-4 border border-primary/10">
                     <div className="flex items-start justify-between mb-3">
                       <div>
-                        <h4 className="font-bold text-text-primary text-lg mb-2">2. OpenAI (Emotional Analysis)</h4>
+                        <h4 className="font-bold text-text-primary mb-2 text-lg">2. OpenAI (Emotional Analysis)</h4>
                       </div>
                     </div>
                     <ul className="space-y-2 text-text-secondary text-sm">

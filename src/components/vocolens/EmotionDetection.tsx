@@ -50,7 +50,7 @@ export function EmotionDetection() {
 
       {/* Header */}
       <AnimatedSection animation="fade-in-up" className="text-center mb-12 lg:mb-16 max-w-3xl mx-auto">
-        <span className="inline-flex items-center gap-2 px-3 py-1 bg-primary/8 text-primary text-xs font-semibold uppercase tracking-widest rounded-full mb-5">
+        <span className="inline-flex items-center gap-2 px-3 py-1 bg-primary/8 text-primary text-sm font-semibold uppercase tracking-widest rounded-full mb-5">
           <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="12" cy="12" r="9" /><path d="M12 3v18M3 12h18" />
           </svg>
@@ -73,9 +73,9 @@ export function EmotionDetection() {
           <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
             <div>
               <p className="font-semibold uppercase tracking-widest text-primary/70 mb-1 text-base leading-relaxed">Hybrid emotional reading</p>
-              <h3 className="text-xl font-bold text-text-primary">Layered, ranked, and yours to refine</h3>
+              <h3 className="font-bold text-text-primary text-xl">Layered, ranked, and yours to refine</h3>
             </div>
-            <div className="flex items-center gap-4 text-xs text-text-muted">
+            <div className="flex items-center gap-4 text-sm text-text-muted">
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-primary/70 inline-block" /> AI baseline
               </span>
@@ -189,7 +189,7 @@ export function EmotionDetection() {
               <div className="w-9 h-9 rounded-xl bg-primary/8 flex items-center justify-center mb-3">
                 {card.icon}
               </div>
-              <h4 className="text-sm font-bold text-text-primary mb-1.5">{card.title}</h4>
+              <h4 className="font-bold text-text-primary mb-1.5 text-lg">{card.title}</h4>
               <p className="text-text-muted text-base leading-relaxed">{card.desc}</p>
             </div>
           ))}

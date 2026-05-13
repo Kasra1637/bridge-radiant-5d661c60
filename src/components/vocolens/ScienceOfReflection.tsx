@@ -135,10 +135,10 @@ export function ScienceOfReflection() {
               <Brain className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <span className="text-xs font-semibold text-primary uppercase tracking-wider block" itemProp="articleSection">
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider block" itemProp="articleSection">
                 Neuroscience &amp; Mental Wellness
               </span>
-              <span className="flex items-center gap-1 text-xs text-text-muted mt-0.5">
+              <span className="flex items-center gap-1 text-sm text-text-muted mt-0.5">
                 <Clock className="w-3 h-3" aria-hidden="true" />
                 <span>5 min read</span>
                 <span aria-hidden="true" className="mx-1">·</span>
@@ -200,7 +200,7 @@ export function ScienceOfReflection() {
             </p>
             <blockquote className="border-l-4 border-primary/40 pl-5 my-5 italic text-text-secondary bg-primary/4 rounded-r-xl py-4 pr-4">
               "Putting feelings into words produces a lasting dampening of emotional response — not just suppression, but genuine regulation."
-              <cite className="block mt-2 text-xs not-italic text-text-muted font-medium">— Lieberman et al., 2007, <span className="italic">Psychological Science</span></cite>
+              <cite className="block mt-2 text-sm not-italic text-text-muted font-medium">— Lieberman et al., 2007, <span className="italic">Psychological Science</span></cite>
             </blockquote>
             <p className="mb-4 text-base leading-relaxed">
               This isn't about toxic positivity or ignoring hard emotions. It's about giving your brain the language it needs to process what you're experiencing — and in doing so, creating real neurological relief. The prefrontal cortex — responsible for rational thinking and self-regulation — becomes more active when you name emotions, effectively bridging the gap between reactive feeling and deliberate understanding.
@@ -307,7 +307,7 @@ export function ScienceOfReflection() {
 
         <AnimatedSection animation="fade-in-up" delay={0.52}>
           <div className="py-8 border-t border-primary/10">
-            <h3 className="text-lg font-bold text-text-primary mb-6">Explore Related Articles</h3>
+            <h3 className="font-bold text-text-primary mb-6 text-xl">Explore Related Articles</h3>
             <button
               onClick={() => navigate({ to: '/resources/emotional-awareness-patterns' })}
               className="w-full text-left p-5 rounded-xl border border-primary/15 bg-primary/3 hover:bg-primary/5 hover:border-primary/25 transition-all group"
@@ -315,7 +315,7 @@ export function ScienceOfReflection() {
               <div className="flex items-start justify-between gap-3">
                 <div className="flex-1">
                   <p className="font-semibold text-primary uppercase tracking-wider mb-1 text-base leading-relaxed">Mental Wellness & Self-Discovery</p>
-                  <h4 className="text-base font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
+                  <h4 className="font-bold text-text-primary group-hover:text-primary transition-colors mb-2 text-lg">
                     Building Emotional Awareness: How Pattern Recognition Transforms Self-Understanding
                   </h4>
                   <p className="text-text-secondary text-base leading-relaxed">Discover metacognitive awareness and how recognizing emotional patterns accelerates personal growth and self-understanding.</p>
