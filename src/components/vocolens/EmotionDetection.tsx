@@ -63,20 +63,6 @@ export function EmotionDetection() {
           Vocolens reads every layer of feeling — you refine what's true.
         </p>
 
-        {/* Pull quote */}
-        <div className="bg-white rounded-2xl px-6 py-5 shadow-clay-sm border border-primary/8 text-left flex gap-4 items-start">
-          <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-            <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-            </svg>
-          </div>
-          <div>
-            <p className="text-text-secondary text-sm leading-relaxed mb-2">
-              "It didn’t try to flatten what I was feeling into one word. I saw the layers — the hope underneath the worry — and I could nudge the reading until it felt like mine."
-            </p>
-            <p className="text-xs font-semibold text-text-muted">Beta user · early reflection sessions</p>
-          </div>
-        </div>
       </AnimatedSection>
 
       {/* Hybrid workflow visualization */}
